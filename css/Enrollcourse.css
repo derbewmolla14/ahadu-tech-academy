@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    height: 100%;
+    max-width: 2000px;
+}
+
+
+.cart-icon {
+    color: var(--lead);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.cart-icon .cart-value {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    font-size: .85rem;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--golden-finger);
+    color: var(--lead);
+    text-align: center;
+    line-height: 20px;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+
+header {
+    background: #6b6666;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    margin: .2rem;
+    border-radius: .2rem;
+    height: 6rem;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    margin-bottom: 3rem;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cart-icon {
+    margin: 1rem;
+    display: block;
+}
+
+.btn {
+    background: rgb(194, 194, 204);
+    font-size: 1.5rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    padding: .7rem;
+    margin-right: 2rem;
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+.cart-box {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    width: 300px;
+    height: 480px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    box-shadow: black 0px 6px 7px;
+}
+
+/* scroll area */
+.cart-list {
+    flex: 1;
+    overflow-y: auto;
+    height: 15rem;
+    color: black;
+}
+
+/* keep total price fixed */
+.cart-footer{
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    background: white;
+    color: black;
+    box-shadow: rgb(235, 49, 49) 0px 5px 6px;
+}
+.cart-footer button a{
+    color: black;
+}
+
+.cart-box li {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+/* Navigation */
+
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+/* Hamburger menu */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.pass a {
+    display: none;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+}
+.logos{
+    display: none;
+}
+/* STYLE  GENERAL */
+.flex {
+    display: flex;
+}
+
+.list-style {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(233, 214, 214);
+    font-size: 18px;
+}
+
+a:hover {
+    color: rgb(35, 249, 121);
+}
+
+.desktop_action {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 li {
+    row-gap: 2rem;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    height: 90%;
+}
+
+#abouts{
+    display: none;
+}
+/* SECTION1 */
+.imgs {
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    left: 2rem;
+}
+
+.swiper {
+    width: 40%;
+    height: 250px;
+    margin: 3rem;
+    margin-top: 10rem;
+    margin-left: 30%;
+    box-shadow: black 0px 6px 7px;
+    border-radius: 1.5rem;
+    align-items: center;
+   }
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background: #e1d0da;
+    color: rgb(16, 241, 110);
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+.slide2,
+.slide4 {
+    margin-right: 1rem;
+    font-size: .7rem;
+}
+
+/* SECTION 2*/
+
+.box {
+    width: 95%;
+    justify-content: center;
+}
+
+.btns {
+    background: rgb(16, 16, 108);
+    font-size: 8rem;
+    width: 4rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    padding: .7rem;
+    margin-right: 2rem;
+}
+
+.btns:hover {
+    background-color: rgb(82, 76, 10);
+    color: rgb(255, 243, 243);
+}
+
+.down {
+    margin-top: 80%;
+
+}
+
+/* CARD 1 HTML */
+
+
+/* Card design */
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.carding {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.card {
+    height: 32rem;
+    text-align: center;
+    margin: 1rem;
+    width: 20rem;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 10);
+}
+
+
+.card h2 {
+    text-align: center;
+
+}
+
+.card p {
+    font-size: 14px;
+    color: rgb(10, 10, 227);
+}
+
+
+
+/* Code display */
+
+pre {
+    background: #222;
+    color: #00ff9d;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+/* Button */
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: hsla(0, 0%, 0%, 0.308);
+    color: hwb(0 2% 93%);
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 1rem;
+    height: 10rem;
+    width: 100%;
+    right: 0%;
+
+}
+
+.at {
+    font-size: .6em;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    font-size: 1rem;
+}
+.footer-wrapper li h3{
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+/* Mobile Design */
+@media (max-width:768px) {
+
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        display: none;
+    }
+
+    header {
+        margin: 0%;
+        border-radius: 0%;
+    }
+
+    .pass {
+        background: rgb(91, 194, 122);
+        padding: .8rem;
+        margin-right: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    /* Show hamburger */
+    .menu-icon {
+        display: flex;
+        right: 0;
+        left: 70%;
+
+    }
+
+    .swiper {
+        display: none;
+    }
+
+    .navMenu {
+        display: none;
+    }
+ 
+    .carding{
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+    }
+    .btn {
+        background: rgb(194, 194, 204);
+        font-size: 1rem;
+        height: 2rem;
+        border-radius: 1.5rem;
+        padding: .7rem;
+        margin-right: 2rem;
+    }
+
+    .desktop_action {
+        display: none;
+    }
+
+    .pass a {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 40%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .logos{
+        display: flex;
+    }
+    .footer-wrapper,
+    .footer-link {
+        font-size: 10px;
+    }
+
+    footer {
+        height: 6rem;
+    }
+}
+
+/* Show menu when active */
+nav.active {
+    display: block;
+    width: 70%;
+    right: 0%;
+    left: 40%;
+    background: black;
+}

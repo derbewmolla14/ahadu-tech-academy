@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Telebirr Payment<
+    </title>
+</head>
+<body>
+  <h2>Telebirr Payment</h2>
+
+<p>Send payment to: 0912345678</p>
+
+<p>Total: <span id="amount"></span></p>
+
+<button>Payment Completed</button>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let total = 0;
+
+cart.forEach(item=>{
+total += item.price;
+});
+
+document.getElementById("amount").textContent = "$" + total;
+
+</script>  
+</body>
+</html>

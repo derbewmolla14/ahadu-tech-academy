@@ -1,0 +1,167 @@
+body{
+font-family:Arial;
+background:#f4f4f4;
+margin:0;
+/* background-image:url(/images/images/image/images/good\ wallpaper.jpg) */
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#696161;
+color:white;
+padding:15px 40px;
+}
+
+.header a{
+color:white;
+text-decoration:none;
+margin-right:20px;
+}
+.flex{
+    display: flex;
+}
+.gap-2{
+    gap: 1rem;
+}
+
+/* .list-style{
+    list-style-type: none;
+} */
+
+.headerimg{
+    width: 3rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.li{
+    text-decoration: none;
+    list-style-type: none;
+}
+main{
+/* margin:10px auto; */
+background:white;
+/* padding:30px; */
+border-radius:10px;
+text-align:center;
+justify-content: center;
+justify-items: center;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+padding:10px;
+width:100%;
+background:#4CAF50;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+.logout-btn{
+background:rgb(82, 77, 77);
+color: white;
+width: 5rem;
+border-radius: 2rem;
+}
+
+.course-card{
+background:#eee;
+padding:10px;
+margin:10px;
+border-radius:6px;
+}
+
+.progress{
+background:#ddd;
+height:10px;
+margin-top:5px;
+}
+
+.progress-bar{
+background:green;
+height:10px;
+}
+
+.certificate{
+text-align:center;
+margin-top:100px;
+}
+1
+/* footer */
+.between{
+    justify-content: space-between;
+    list-style: none;
+}
+footer{
+    background-color: black;
+    color: hsl(0, 30%, 93%);
+    list-style-type:none;
+    text-decoration: none;
+}
+li{
+list-style: none;
+text-decoration: none;
+color: hsl(0, 30%, 93%);
+}
+.container{
+    border: solid;
+    height: 20rem;
+    width: 15rem;
+    margin: 20px;
+}
+.history{
+    justify-content: space-between;
+    display: flex;
+}
+img{
+    width: 50px;
+}
+.p1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wellcome{
+    width: 50%;
+    border: 0;text-align: left;
+}
+.pc-logo{
+    font-size: 50px;
+}
+
+
+.swiper{
+  width:80%;
+  height:300px;
+}
+
+.swiper-slide{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+  background:#c0d6f0;
+  color:white;
+  border-radius:3rem;
+  margin-top: 1rem;
+ 
+}
+
+.swiper{
+    box-shadow: black 0px 11px 10px;
+    margin-top: 15px;
+    border-radius: 3rem;
+}
+
+
+
+
+
+
+

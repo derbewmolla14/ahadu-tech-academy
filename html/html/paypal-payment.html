@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Payment</title>
+</head>
+<body>
+    <h2>PayPal Payment</h2>
+
+<p>Total Amount: <span id="amount"></span></p>
+
+<button>Confirm Payment</button>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let total = 0;
+
+cart.forEach(item=>{
+total += item.price;
+});
+
+document.getElementById("amount").textContent = "$" + total;
+</script>
+</body>
+</html>

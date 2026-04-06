@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CSS Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/Enrollcourse.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#">My Website</a></div>
+        <div class="logo logos"><h4>Well come to Molla Ahadu tech academy</h4></div>
+        <div class="headers flex">
+            <nav id="navMenu" class="flex navMenu">
+                <div class="flex pass between ">
+                    <a href="/html/login.html" class="btn desktop-action-btn" id="desktop_actions">Sign In
+                        &nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </div>
+                <ul class="flex list-style gap-2 headering">
+                    <li><a href="/html/profile.html" class="icon">Home</a></li>
+                    <li><a href="#" class="icon">Menu</a></li>
+                    <li><a href="#" class="icon">Service</a></li>
+                    <li><a href="#" class="icon" id="about">About</a></li>
+                    <li><a href="#" class="icon">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="desktop_action flex gap-2 ">
+                <a href="#" class="cart-icon"><i class="fa-solid fa-bag-shopping"><span
+                            class="cart-value">0</span></i></a>            </div>
+            <div class="menu-icon">
+                <a href="#" class="cart-icon flex">
+                    <i class="fa-solid fa-bag-shopping "></i>
+                </a>
+                <div id="navMenus">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <div id="cartBox" class="cart-box">
+
+        <h3>Your Courses</h3>
+
+        <div class="cart-list">
+            <ul id="cartItems"></ul>
+        </div>
+
+        <div class="cart-footer">
+            <h4>Total: $<span id="totalPrice">0</span></h4>
+
+            <button id="paypalBtn"><a href="http://www.paypal.com">Pay with PayPal</a></button>
+            <button id="telebirrBtn"><a href="http://www.telebirr.com">Pay with Telebirr</a></button>
+            <button id="stripeBtn"><a href="http://www.stripe.com">stripe</a></button>
+        </div>
+
+    </div>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <!-- <img src=".vscode/image/images/mollalike.4.png" alt="" class="imgs"> -->
+                        <div class="flex">
+                            <img src="/images/images/image/images/mollaspacial1.png" alt="" class="imgs">
+                            <div>
+                                <h4>Well Come to my tutorial wibeSite</h4><br>
+                                <p class="para1">
+                                    In this channel to includes<br>
+
+                                    1.Javascript<br>
+                                    2.Html <br>
+                                    3.Css <br>
+                                    4.Python <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div><img src="/images/images/image/images/mollaspacial2.png" alt="" class="imgs"></div>
+                    <div class="slide2">
+                        <h1> CSS</h1>
+                        <code><pre>.imgs{
+      width: 10rem;
+      margin: 1rem;
+      border-radius: 2rem;
+    }
+    .swiper {
+      width: 50%;
+      height: 250px;
+      margin: 3rem;
+      margin-left: 30%;
+
+    }
+</pre></code>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div><img src="/images/images/image/images/mollaspacial3.png" alt="" class="imgs"></div>
+                    <div class="slide2">
+                        <pre><h1>JavaScript</h1>
+            function addCourse(){
+                    let name=document.getElementById("courseName").value;
+                    let courses=JSON.parse(localStorage.getItem("courses"))||[]
+                    courses.push(name);
+                    localStorage.setItem("courses",JSON.stringify(courses));
+                    alert("Course Added");}
+            window.onload=function(){
+                let select=document.getElementById("courseSelect");
+                if(select){
+                    let courses=JSON.parse(localStorage.getItem("courses"))||[]
+                    courses.forEach(c=>{
+                        let option=document.createElement("option");
+                        option.text=c;
+                        select.add(option)})
+
+        </pre>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div><img src="/images/images/image/images/molla5.png" alt="" class="imgs"></div>
+                    <pre class="slide4"><h2>Python</h2>
+                    Python is the high level langauge and 
+                    easy to use to compared other languages
+                    Its use 
+                        AI,
+                        BLOCKCHAIN,
+                        Machine language
+                        And Robotics
+
+
+                </pre>
+                </div>
+                <div class="swiper-slide">
+                    <div><img src="/images/images/image/images/molla6.png" alt="" class="imgs"></div>
+                    <pre class="slide4"><h2>REACT</h2>
+                    Python is the high level langauge and 
+                    easy to use to compared other languages
+                    Its use 
+                        AI,
+                        BLOCKCHAIN,
+                        Machine language
+                        And Robotics
+
+
+                </pre>
+                </div>
+                <div class="swiper-slide">
+                    <div><img src="/images/images/image/images/molla4.png" alt="" class="imgs"></div>
+                    <pre class="slide4"><h2>Node.js</h2>
+                    Python is the high level langauge and 
+                    easy to use to compared other languages
+                    Its use 
+                        AI,
+                        BLOCKCHAIN,
+                        Machine language
+                        And Robotics
+
+
+                </pre>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+        <div class="cards">
+            <div class="carding">
+                <div class="card">
+
+                    <h2>HTML</h2>
+
+                    <p>
+                        HTML (HyperText Markup Language) is the standard language used to create
+                        web pages. It defines the structure of a webpage using tags.
+                    </p>
+
+                    <h3>Example</h3>
+
+                    <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;p&gt;This is my website.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code>
+</pre>
+
+                    <button class="btn enroll-btn1 " data-course="HTML Course" data-price="50"
+                        id="enroll">Enroll</button>
+
+                </div>
+                <div class="card">
+
+                    <h2>CSS</h2>
+
+                    <p>
+                        CSS (Cascading Style Sheets) is used to style and design web pages.
+                        It controls colors, fonts, layout, spacing, and animations.
+                    </p>
+
+                    <h3>Example</h3>
+
+                    <pre>
+<code>
+body{
+    background-color: lightblue;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+p{
+    font-size:18px;
+}
+</code>
+</pre>
+                    <button class="btn enroll-btn2" data-course="CSS Course" data-price="30"
+                        id="enrolling">Enroll</button>
+                </div>
+                <div class="card">
+
+                    <h2>JavaScript</h2>
+
+                    <p>
+                        JavaScript is a programming language used to make websites interactive.
+                        It can control web page behavior, respond to user actions, and create dynamic content.
+                    </p>
+
+                    <h3>Example</h3>
+
+                    <pre>
+<code>
+function showMessage(){
+    alert("Welcome to my website!");
+}
+showMessage();
+</code>
+</pre>
+
+                    <button class="btn enroll-btn3" data-course="JavaScript Course" data-price="30"
+                        id="Enroll">Enroll</button>
+
+                </div>
+            </div>
+            <div class="carding">
+                <div class="card">
+
+                    <h2>REACT</h2>
+
+                    <p>
+                        JavaScript is a programming language used to make websites interactive.
+                        It can control web page behavior, respond to user actions, and create dynamic content.
+                    </p>
+
+                    <h3>Example</h3>
+
+                    <pre>
+<code>
+function showMessage(){
+    alert("Welcome to my website!");
+}
+showMessage();
+</code>
+</pre>
+
+                    <button class="btn enroll-btn3" data-course="React Course" data-price="40"
+                        id="Enroll">Enroll</button>
+
+                </div>
+                <div class="card">
+
+                    <h2>NODE.JS</h2>
+
+                    <p>
+                        JavaScript is a programming language used to make websites interactive.
+                        It can control web page behavior, respond to user actions, and create dynamic content.
+                    </p>
+
+                    <h3>Example</h3>
+
+                    <pre>
+<code>
+function showMessage(){
+    alert("Welcome to my website!");
+}
+showMessage();
+</code>
+</pre>
+
+                    <button class="btn enroll-btn2" data-course="node.js Course" data-price="50"
+                        id="Enroll">Enroll</button>
+
+                </div>
+                <div class="card">
+
+                    <h2>HTML</h2>
+
+                    <p>
+                        HTML (HyperText Markup Language) is the standard language used to create
+                        web pages. It defines the structure of a webpage using tags.
+                    </p>
+
+                    <h3>Example</h3>
+
+                    <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;p&gt;This is my website.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code>
+</pre>
+
+                    <button class="btn enroll-btn1" data-course="HTML Course" data-price="50"
+                        id="enroll">Enroll</button>
+
+                </div>
+            </div>
+        </div>
+
+         <div id="abouts">
+            <h2>Here is a Homepage Welcome Text you can use on your website that teaches programming:</h2>
+            <h1 class="pc-logo">💻</h1>
+            <h1>Welcome to Our Coding Tutorial Website 💻🚀</h1>
+            <fieldset class="wellcome">
+                <p class="p1">
+                <pre class="preabout"> Welcome to our website! This platform is created to help 
+            students, 
+            beginners, and
+            developers learn  programming in a simple and practical way.
+
+            Here you can learn different coding languages such as HTML, CSS, JavaScript, and Python
+            through easy tutorials, examples, and real projects.
+
+            Our goal is to make coding easy for everyone by providing:
+
+            * Clear explanations 📘
+            * Step-by-step tutorials 🧑‍💻
+            * Practical coding examples 💡
+            * Real web development projects 🌐
+
+            Whether you are **starting your coding journey** or **improving your programming skills**, this website will
+            guide you step by step.
+
+            Start learning today and build your future in programming! 🚀💻
+
+            ---
+
+            If you want, I can also help you create:
+
+            * **A professional homepage layout (HTML + CSS)**
+            * **Website About Us page**
+            * **Website slogan/tagline**
+            * **Coding tutorial website sections**. </pre>
+                </p>
+            </fieldset>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="flex wrapper gap-3 between">
+                <div class="footer-wrapper">
+                    <a href="#" class="logo">Tutorial.</a>
+
+                    <p class="mt-one-half">This section tells users about the company Contains: <br>
+                        Short description of the our wibesite <br>
+                    </p>
+
+                    <div class="flex gap-2 mt-one-half list-style">
+                        <a href="#" class="btn">Order Now</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Google">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                    <a href="#" class="at">@Developed by Molla Derbew in 2026.</a>
+                </div>
+
+                <ul class="footer-wrapper list-style gap-3">
+                    <li>
+                        <h3>Our Menu</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Html</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Css</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Javascript</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Python</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-wrapper list-style gap-3">
+                    <li>
+                        <h3>Compuny</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">WHy tutorial</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Partner with us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">About As</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">FAQ'S</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-wrapper list-style gap-3">
+                    <li>
+                        <h4>support</h4>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Account</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/Enrollcources.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register to My English Course Toturial Website</title>
+    <link rel="stylesheet" href="/css/page1signin.css">
+</head>
+
+<body>
+
+    <div class="form">
+        <h2>Create Account</h2>
+        <!-- <div class="headerimg">
+            <img src="/images/images/image/images/mollaspacial2.png" class="headerimg1" id="image1">
+            <img src="/images/images/image/images/mollaspacial2.png" class="headerimg1">
+        </div> -->
+        <input type="text" name="" id="firstname" placeholder="first name">
+        <input type="text" name="" id="lastname" placeholder="last name">
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="password" id="password" placeholder="Password"><br>
+        <div id="strength"></div>
+        <input type="text" placeholder="e.g Ethiopia" id="country">
+        <input type="file" name="image" class="headerimg" id="images">
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+            <option value=""> Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        <button onclick="sendCode();">Send Phone Code</button>
+        <input type="text" id="otp" placeholder="Enter OTP">
+
+        <button onclick="register();">Register</button>
+
+        <p>Already have account?
+            <a href="login.html">Login</a>
+        </p>
+
+    </div>
+
+    <script src="/js/general.js"></script>
+
+</body>
+
+</html>
