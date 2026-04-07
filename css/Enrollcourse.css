@@ -13,6 +13,9 @@ body {
     max-width: 2000px;
 }
 
+header{
+    z-index: 2000;
+}
 
 .cart-icon {
     color: var(--lead);
